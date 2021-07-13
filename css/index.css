@@ -10,3 +10,11 @@ p, li {
 a {
   text-decoration: none;
 }
+
+
+/* header formatting */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  
+}

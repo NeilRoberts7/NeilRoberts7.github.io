@@ -16,5 +16,8 @@ a {
 header {
   display: flex;
   justify-content: space-evenly;
-  
+}
+
+#nameHeader {
+  float: left;
 }

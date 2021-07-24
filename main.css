@@ -1,60 +1,45 @@
-main {
-  margin-left: 15%;
-  margin-right: 15%;
 
+/* GLOBAL STYLES */
+body {
+  background: #333;
+  background-image: url("./pw_maze_black/pw_maze_black.png")
+}
+
+#splashText {
+  color: white;
+}
+
+hr {
+  color: white;
+}
+
+p {
   text-align: justify;
+  font-size: 125%;
 }
 
-p, li {
-  font-size: 18px;
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
-a {
-  text-decoration: none;
-  color: #aaa;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-
-
-
-/* header formatting */
-header {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#nameHeader {
-  text-align: center;
-}
-
-#name {
-  text-transform: uppercase;
-}
-
-
-
-
-nav {
-  background: #fff;
-}
-
-nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 20px 0px 20px 0px;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 0px 40px;
-  margin: 0px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-nav ul li a:hover {
-  color: #555;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
